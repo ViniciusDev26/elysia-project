@@ -3,7 +3,10 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/infra/http/index.ts"
+    "dev": "bun run --watch src/infra/http/index.ts",
+    "lint": "bunx @biomejs/biome lint src",
+    "format": "bunx @biomejs/biome format src",
+    "fix": "bunx @biomejs/biome check --apply src"
   },
   "dependencies": {
     "@elysiajs/swagger": "^0.8.0",
@@ -12,6 +15,7 @@
     "elysia-rate-limit": "^2.0.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.4.1",
     "bun-types": "latest"
   },
   "module": "src/index.js"
