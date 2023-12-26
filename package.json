@@ -1,0 +1,18 @@
+{
+  "name": "store",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/infra/http/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/swagger": "^0.8.0",
+    "@grotto/logysia": "^0.1.1",
+    "elysia": "latest",
+    "elysia-rate-limit": "^2.0.1"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
